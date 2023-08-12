@@ -9,12 +9,14 @@
 </head>
 <body>
     <div id="boton">
-        <button onclick="myFunction()">Saludar</button>
+        <button onclick="myFunction(event)">Saludar</button>
     </div>
    
     <script>
-    function myFunction() {
+    function myFunction(event) {
+        event.stopPropagation();
          alert("Hola");
+         
 }</script>
 </body>
 </html>
